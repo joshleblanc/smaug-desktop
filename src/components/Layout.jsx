@@ -1,16 +1,9 @@
-import { Fragment, useState, useEffect } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
-import { useStoreState, useStoreActions } from 'easy-peasy';
-import {
-  NavLink
-} from "react-router-dom";
+import { useStoreActions } from 'easy-peasy';
+
 import {
   HomeIcon,
   MenuAlt2Icon,
-  XIcon,
   CollectionIcon,
-  CodeIcon,
-  BookOpenIcon,
   CogIcon
 } from '@heroicons/react/outline'
 import './Layout.css';
