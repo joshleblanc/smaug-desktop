@@ -16,7 +16,7 @@ export default ({ navigation }) => {
     useEffect(() => {
         const handle = () => {
             
-            const visible = document.getElementById("breakpoint-md")?.offsetParent === null;
+            const visible = document.getElementById("breakpoint-sm")?.offsetParent !== null;
             setHidden(!visible);
         }
 
@@ -27,7 +27,6 @@ export default ({ navigation }) => {
             window.removeEventListener("resize", handle);
         }
     }, [])
-
     
     if(hidden) return null;
 
