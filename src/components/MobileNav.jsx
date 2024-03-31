@@ -16,7 +16,7 @@ export default ({ navigation }) => {
     useEffect(() => {
         const handle = () => {
             
-            const visible = document.getElementById("breakpoint-md")?.offsetParent;
+            const visible = document.getElementById("breakpoint-md")?.offsetParent === null;
             setHidden(!visible);
         }
 
@@ -29,7 +29,7 @@ export default ({ navigation }) => {
     }, [])
 
     
-    if(!hidden) return null;
+    if(hidden) return null;
 
     return (
         <Transition.Root show={sidebarOpen} as={Fragment}>
